@@ -11,7 +11,7 @@ function Details() {
 <div className=' p-16 m-8'>
 <div className='mt-8 space-x-4'>
 <label for="email" className="mb-2 text-lg font-medium text-gray-900 text-xl ">Your email</label>
-<input type="email" name="email" id="email" className='bg-black w-80 text-xl p-2 ' placeholder="username@gamil.com" required></input>
+<input type="email" name="email" id="email" className='bg-black w-80 text-xl p-2 font-mono ' placeholder="username@gamil.com" required></input>
 
 
 </div>
@@ -21,8 +21,13 @@ function Details() {
 </div>
 <div className='flex space-x-4 mt-8'>
 <label for="message" className="mb-2 text-lg font-medium text-gray-900 text-xl ">Your message</label>
-<textarea id="message"   placeholder="Your message..."  rows="5" className='w-[450px]  overflow-hidden bg-black p-4'></textarea>
+<textarea id="message"   placeholder="Your message..."  rows="5" className='w-[450px] font-mono  overflow-hidden bg-black p-4'></textarea>
+
 </div>
+<div className='ml-16'>
+<button className='text-white font-bold font-mono bg-blue-500 mt-8 p-2 '>send messages</button>
+</div>
+
 </div>
 
 </div>
