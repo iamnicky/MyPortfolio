@@ -3,6 +3,7 @@ import './App.css';
 import Card from './components/Card';
 import { useState } from 'react';
 import Details from './components/Details';
+import Footer from './components/Footer';
 
 
 
@@ -74,6 +75,7 @@ function App() {
    </div>
 
    <Details/>
+   <Footer/>
     
       </div>
       </div>
