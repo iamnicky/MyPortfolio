@@ -110,7 +110,7 @@ function Footer() {
             </div>
             <div className=''>
                 <div class="text-center p-4 " >
-                    © 2021 Copyright
+                    © 2022 Copyright
                     <span class=" p-2 font-bold font-mono" >Nicky {""}❤️</span>
                 </div>
             </div>
