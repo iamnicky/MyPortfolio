@@ -2,7 +2,7 @@ import React from 'react'
 
 function Try() {
   return (
-    <div>
+    <div className='bg-red-500 h-8 w-full'>
         
     </div>
   )

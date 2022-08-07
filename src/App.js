@@ -55,7 +55,7 @@ function App() {
               <button className='flex text-white text-xl bg-gray-700 rounded p-4 hover:shadow-lg hover:shadow-cyan-500/50  px-8  '>project 2  </button>
               <button className='flex text-white text-xl bg-gray-700 rounded p-4 hover:shadow-lg hover:shadow-cyan-500/50  px-8  '>project 3 </button>
             </div>
-
+            <Try/>
 
 
           </div>
@@ -78,8 +78,9 @@ function App() {
         </div>
 
         <Details />
+       
         <Footer />
-<Try/>
+
       </div>
     </div>
 
