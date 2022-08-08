@@ -50,11 +50,7 @@ function App() {
 
             <h1 className='text-3xl font-bold'>Want to see my project?</h1>
             <p className='text-2xl font-bold text-gray-500'>I am the kind of person who learns from making projects and implements concepts through out making projects. These are my best projects which really inspire you.</p>
-            <div className='flex space-x-4 justify-center mt-8'>
-              <button className='flex text-white text-xl bg-gray-700 rounded p-4 hover:shadow-lg hover:shadow-cyan-500/50  px-8  '>project 1 </button>
-              <button className='flex text-white text-xl bg-gray-700 rounded p-4 hover:shadow-lg hover:shadow-cyan-500/50  px-8  '>project 2  </button>
-              <button className='flex text-white text-xl bg-gray-700 rounded p-4 hover:shadow-lg hover:shadow-cyan-500/50  px-8  '>project 3 </button>
-            </div>
+            
             <Try/>
 
 
