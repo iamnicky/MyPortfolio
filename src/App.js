@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {useEffect} from 'react';
 import Card from './components/Card';
 import { useState } from 'react';
 import Details from './components/Details';
@@ -10,17 +11,29 @@ import Try from './components/Try';
 
 
 function App() {
+
+  
+  const [OffsetY,setOffsetY]=useState();
+  const handleScroll=()=>setOffsetY(window.pageYOffset);
+  
+  useEffect(() => {
+    window.addEventListener("scroll",handleScroll);
+  
+    return()=>window.removeEventListener("scroll",handleScroll);
+  },[]);
+
+
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={`${darkMode && darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div className={`${darkMode && darkMode ? 'dark-mode' : 'light-mode'}`} >
 
 
       <button className=' text-green-800 border-4 rounded shadow-3xl border-gray-300 bg-yellow-300  m-4' onClick={() => setDarkMode((previousDarkMode) => !previousDarkMode)}><img src="https://img.icons8.com/color/48/000000/back-sorting.png" /></button>
 
-      <div className=' m-8 p-2 '>
+      <div className=' m-8 p-2 ' >
 
-        <div className=' p-32   '>
+        <div className=' p-32   ' style={{transform:`translateY(${OffsetY*0.5}px)`}}>
           <h1 className='text-7xl  
      flex-wrap text-center text-gray-300 font-bold  mx-16  p-8'>Hey, It's me <span className='text-blue-500'>Nicky</span> Kumari</h1>
           <p className='text-xl text-gray-400 font-bold text-center'>MERN stack web developer, Quick learner, Self motivated, Curious person</p>
@@ -33,8 +46,8 @@ function App() {
 
         </div>
 
-        <Card />
-        <div className='mt-32 text-center p-8  '>
+        <Card/>
+        <div className='mt-32 text-center p-8  ' >
           <h1 className='font-bold text-5xl  '>Let's talk about my coding skills, technical skills and whatever you want to hire me. Please have a look.</h1>
 
           <div className='m-16 mx-80 '>
@@ -74,8 +87,12 @@ function App() {
         </div>
 
         <Details />
+
+        
        
         <Footer />
+       
+
 
       </div>
     </div>
